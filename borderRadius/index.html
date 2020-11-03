@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <div id="content-title">
+            <h1>Border Radius Previewer</h1>
+        </div>
+        <div class="content-input">
+            <div class="content-input-group">
+                <div class="input-group1">
+                        <input id="input-top-l" type="number" min="0" step="1" value="0"/>
+                        <input id="input-top-r" type="number" min="0" step="1" value="0"/> 
+                </div>
+                <div class="input-group2">
+                        <input id="input-bottom-l" type="number" min="0" step="1" value="0"/>
+                        <input id="input-bottom-r" type="number" min="0" step="1" value="0"/>
+                </div>
+                <div>
+                    <button class="btn-app" id="btn-equals">Equals Borders</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-prop">
+        <div class="content-prop-items">
+            <input id="input-prop" type="text" readonly>
+            <br>
+            <button id="btn-coppy">Copy</button>
+        </div>
+    </div>
+    <div class="box-block">
+        <p id="box-preview"></p>  
+    </div>
+    <script src="site.js"></script>
+</body>
+</html>
